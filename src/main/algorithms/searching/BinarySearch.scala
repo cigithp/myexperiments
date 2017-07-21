@@ -21,18 +21,19 @@ object BinarySearch extends App {
     bsf(list, searchValue, 0, list.length - 1)
   }
 
-  def binarySearchRecursive(list: Array[Int], searchValue: Int)(start: Int = 0, end: Int = list.length - 1) : Boolean = {
+
+
+  def binarySearchRecursive(list: Array[Int], searchValue: Int)(start: Int, end: Int) : Boolean = {
     if(start > end) return false
     val mid = start + (end - start + 1)/2
     if (list(mid) == searchValue) return true
-    else if (list(mid) > searchValue) binarySearchRecursive(list, searchValue)(start, mid - 1)
-    else binarySearchRecursive(list, searchValue)(mid + 1, end)
+    else if (list(mid) > searchValue) binarySearchRecursive(inputList, 11)(start, mid - 1)
+    else binarySearchRecursive(inputList, 11)(mid + 1, end)
   }
 
   val inputList = Array(1,2,3,4,5,6,7,8,9,10)
   println(s"Input List : $inputList")
   println(s"Search :: ${binarySearch(inputList, 5)}")
-  println(s"Search :: ${binarySearchRecursive(inputList, 5)_}")
-
-
+  val x = binarySearchRecursive(inputList, 11)_
+  println(s"Search :: ${x(0, inputList.length - 1)}")
 }
