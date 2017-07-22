@@ -1,5 +1,15 @@
 package main.algorithms.sorting
 
+/**
+  * Time complexities :
+  * Best case
+  * Worst case
+  *
+  * Space Complexities :
+  * Best case
+  * Worst case
+  *
+  * */
 
 object InsertionSort extends App {
 

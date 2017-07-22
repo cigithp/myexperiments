@@ -1,5 +1,19 @@
 package main.algorithms.sorting
 
+/**
+  *
+  * Divide and Conquer Principle
+  *
+  * Time complexities :
+  * Best case
+  * Worst case
+  *
+  * Space Complexities :
+  * Best case
+  * Worst case
+  *
+  * */
+
 object MergeSort extends App {
   def mSort(less: (Int, Int) => Boolean)(xs: List[Int]): List[Int] = {
 
