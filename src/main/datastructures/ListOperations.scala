@@ -1,7 +1,7 @@
 package main.datastructures
 
 /**
-  * Created by pillaci on 7/15/17.
+  * Created on 7/15/17.
   */
 object ListOperations extends App{
 

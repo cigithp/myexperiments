@@ -1,7 +1,7 @@
 package main.algorithms.sorting
 
 /**
-  * Created by pillaci on 7/22/17.
+  * Created on 7/22/17.
   *
   * Divide and Conquer Principle
   *
