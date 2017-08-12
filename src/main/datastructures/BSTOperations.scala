@@ -52,7 +52,7 @@ object BSTOperations {
     //replace the outgoing node with the successor
 
     var currNode: Option[Node] = root
-    var parentNode: Option[Node] = None // this is wrong
+    var parentNode: Option[Node] = None
     var isLeftChild: Boolean = false
     var rootNode : Node = root.get
 
@@ -143,12 +143,12 @@ object Main extends App {
   //  println(s"POSTORDER :: ${postOrder(Some(root))}")
 
   //delete leaf
-   // println(s"INORDER :: ${BSTOperations.inOrder(Some(BSTOperations.deleteNode(5, Some(root))))}")
+   //println(s"INORDER :: ${BSTOperations.inOrder(Some(BSTOperations.deleteNode(5, Some(root))))}")
 
   //delete root
   //println(s"INORDER :: ${BSTOperations.inOrder(Some(BSTOperations.deleteNode(10, Some(root))))}")
 
   //delete non-leaf
-  println(s"INORDER :: ${BSTOperations.inOrder(Some(BSTOperations.deleteNode(7, Some(root))))}")
-
+  //println(s"INORDER :: ${BSTOperations.inOrder(Some(BSTOperations.deleteNode(7, Some(root))))}")
+  //println(s"INORDER :: ${BSTOperations.inOrder(Some(BSTOperations.deleteNode(4, Some(root))))}")
 }
