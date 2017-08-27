@@ -5,7 +5,12 @@ package main.datastructures
   */
 object LinkedListOperations {
 
-  case class Node(val data: Int, var next : Option[Node])
+  //linked list has 2 pointers
+  //head
+  //tail
+
+
+  case class Node(data: Int, var next : Option[Node])
   //var head : Node
 
   object Node {

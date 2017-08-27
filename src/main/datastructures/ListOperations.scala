@@ -79,4 +79,14 @@ object ListOperations extends App{
 
   println(s"Length of the List (recursive) : ${length(inputList)}")
 
+  def reverse[A](a: List[A]): List[A] = {
+    def f1(acc: List[A], y: List[A]): List[A] = y match {
+      case List() => acc
+      case x :: xs => f1(x :: acc, xs)
+      case _ => throw new NoSuchElementException
+    }
+    f1(List.empty[A], a)
+  }
+
+  println(s"Reverse List (recursive) : ${reverse(inputList)}")
 }
